@@ -8,7 +8,7 @@ $(function() {
     var randomQuote = 0;
     // var lastRandom = 1;    
 
-    $.getJSON("./quotes.json", function(json) {
+    $.getJSON("../quotes.json", function(json) {
   
         json.forEach(function(valObj) {
                 items.push(valObj);                            
