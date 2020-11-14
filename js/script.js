@@ -5,9 +5,6 @@ let htmlAuthor = "";
 let backgroundColor = "";
 let min = 0;
 let randomQuote = 0;
-// let lastRandom = 1;
-
-console.log(quotes);
 
 let max = quotes.length; //Número de quotes
 
