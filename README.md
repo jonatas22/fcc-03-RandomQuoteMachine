@@ -22,7 +22,7 @@ Link: [RandomQuoteMachine](https://jonatasoc.github.io/fcc-03-RandomQuoteMachine
 # :rocket: Features
 
 - #### Get quotes from a JS file to showing they up randomly.
-- #### When a user click in New Quote it change the quote and the color of the page
+- #### When a user click in New Quote, it changes the quote and the color of the page
 
 # :postbox: Faq
 
