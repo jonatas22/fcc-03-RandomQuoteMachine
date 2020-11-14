@@ -1,42 +1,36 @@
-$(function() {
+import quotes from "../quotes.js";
 
-    var items = [];
-    var htmlQuote = "";
-    var htmlAuthor = "";
-    var backgroundColor = "";
-    var min = 0;
-    var randomQuote = 0;
-    // var lastRandom = 1;    
+let htmlQuote = "";
+let htmlAuthor = "";
+let backgroundColor = "";
+let min = 0;
+let randomQuote = 0;
+// let lastRandom = 1;
 
-    $.getJSON("../quotes.json", function(json) {
-  
-        json.forEach(function(valObj) {
-                items.push(valObj);                            
-        });
+console.log(quotes);
 
-            var max = items.length; //Número de quotes
+let max = quotes.length; //Número de quotes
 
-        $("#new-quote").on("click", function() {
-            randomQuote = Math.floor(Math.random() * (max - min)) + min;
-            htmlQuote = items[randomQuote].quote;
-            htmlAuthor = "- " + items[randomQuote].author;
-            backgroundColor = items[randomQuote].color;
+$("#new-quote").on("click", function () {
+  randomQuote = Math.floor(Math.random() * (max - min)) + min;
+  htmlQuote = quotes[randomQuote].quote;
+  htmlAuthor = "- " + quotes[randomQuote].author;
+  backgroundColor = quotes[randomQuote].color;
 
-            $("#quote").html(htmlQuote);
-            $("#quote-author").html(htmlAuthor);
-            $(".color").css("color", backgroundColor);
-            $(".background-color").css("background-color", backgroundColor);
-            $("#tw-link").attr("href", 'https://twitter.com/intent/tweet?hashtags=ValniceMilhomens&text="' + htmlQuote + '"');
+  $("#quote").html(htmlQuote);
+  $("#quote-author").html(htmlAuthor);
+  $(".color").css("color", backgroundColor);
+  $(".background-color").css("background-color", backgroundColor);
+  $("#tw-link").attr(
+    "href",
+    'https://twitter.com/intent/tweet?hashtags=ValniceMilhomens&text="' +
+      htmlQuote +
+      '"'
+  );
 
-        //Reanimate #quotes-div
-            var el = $("#quotes-div");
-            var newElem = el.clone(true);
-            el.before(newElem);
-            $(el).remove(); 
-        });
-           
-    })
-
-
-
+  //Reanimate #quotes-div
+  let el = $("#quotes-div");
+  let newElem = el.clone(true);
+  el.before(newElem);
+  $(el).remove();
 });
