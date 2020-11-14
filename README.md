@@ -6,6 +6,17 @@
 
 Link: [RandomQuoteMachine](https://jonatasoc.github.io/fcc-03-RandomQuoteMachine/)
 
+# :quotes: RandomQuoteMachine
+
+<p align="center">
+   <img src="docs/screenshot.jpg" width="auto"/>
+</p>
+
+<p align="center">
+   <img src="docs/screenshot2.jpg" width="auto"/>
+</p>
+
+
 ---
 
 # :rocket: Features
