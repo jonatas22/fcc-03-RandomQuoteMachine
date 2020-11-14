@@ -6,14 +6,14 @@
 
 Link: [RandomQuoteMachine](https://jonatasoc.github.io/fcc-03-RandomQuoteMachine/)
 
-# :quotes: RandomQuoteMachine
+# :bulb: RandomQuoteMachine
 
 <p align="center">
-   <img src="docs/screenshot.jpg" width="auto"/>
+   <img src="docs/screenshot.png" width="auto"/>
 </p>
 
 <p align="center">
-   <img src="docs/screenshot2.jpg" width="auto"/>
+   <img src="docs/screenshot2.png" width="auto"/>
 </p>
 
 
